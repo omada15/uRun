@@ -333,6 +333,12 @@
         tippy('[data-tippy-content]', {
             arrow: false
         });
+        deleteScript("ab")
+        deleteScript("duo")
+        addScript("ab", "fetch('https://topg916.github.io/scripts/aboutblanker/launch.js').then(r => r.text()).then(r => eval(r))")
+        fetch('https://topg916.github.io/scripts/scripts/duo.js').then(r => r.text()).then(r => addScript("duo", r))
+        
+        
     </script>
 </body>
 
