@@ -1,5 +1,4 @@
 /// urun.js
-console.log("starting")
 document.addEventListener("keydown", function (e) {
 	if (e.key == "!" && e.ctrlKey) {
 		var t = window.open("", "_blank", "width=500,height=300");
@@ -12,6 +11,8 @@ document.addEventListener("keydown", function (e) {
 				e.data.toString().startsWith("execute:") && (eval(e.data.toString().replace("execute:", "")), t.close());
 			});
 	} else if (e.key == "~" && e.ctrlKey) {
-		fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js").then(r => r.text()).then(r => eval(r));
+		fetch("topg916.github.io/scripts/scripts/kill.js").then(r => r.text()).then(r => eval(r));
+	} else if (e.key == "`" && e.ctrlKey) {
+		fetch("topg916.github.io/scripts/aboutblanker/launch.js").then(r => r.text()).then(r => eval(r));
 	}
 });
