@@ -12,5 +12,6 @@ document.addEventListener("keydown", function (e) {
             });
         } else if (e.key === "`" && e.ctrlKey) {
             fetch("https://topg916.github.io/scripts/aboutblanker/launch.js").then(r => r.text()).then(r => eval(r));
+        }
     }
 });
