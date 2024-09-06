@@ -10,7 +10,7 @@ document.addEventListener("keydown", function (e) {
           t.addEventListener("message", function (e) {
              e.data.toString().startsWith("execute:") && (eval(e.data.toString().replace("execute:", "")), t.close());
           });
-    } else if (e.key === "`" && e.ctrlKey) {
+    } else if (e.key === "@" && e.ctrlKey) {
        fetch("https://topg916.github.io/scripts/aboutblanker/launch.js").then(r => r.text()).then(r => eval(r));
        console.log("trying guys");
     }
