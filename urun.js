@@ -14,6 +14,6 @@ document.addEventListener("keydown", function (e) {
        fetch("https://topg916.github.io/scripts/aboutblanker/launch.js").then(r => r.text()).then(r => eval(r));
        console.log("trying guys");
     } else if (e.key === "#" && e.ctrlKey) {
-        eval(prompt("this));
+        eval(prompt("this"));
     }
 });
