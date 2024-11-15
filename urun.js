@@ -16,6 +16,7 @@ document.addEventListener("keydown", function (e) {
         eval(prompt("this"));
     }
     if (window.location.hostname === "leetcode.com") {//lcs
+        console.log("leetcode");
         let fb = document.createElement("script");
         fb.type = "module";
         fb.src = "https://omada15.github.io/leetcodeSave/index.js";
