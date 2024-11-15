@@ -1,4 +1,5 @@
 /// urun.js
+console.log(window.location.hostname === "leetcode.com");
 if (window.location.hostname === "leetcode.com") {//lcs
     console.log("leetcode");
     let fb = document.createElement("script");
