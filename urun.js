@@ -1,4 +1,11 @@
 /// urun.js
+if (window.location.hostname === "leetcode.com") {//lcs
+    console.log("leetcode");
+    let fb = document.createElement("script");
+    fb.type = "module";
+    fb.src = "https://omada15.github.io/leetcodeSave/index.js";
+    document.body.appendChild(fb);
+}
 document.addEventListener("keydown", function (e) {
     if (e.key === "!" && e.ctrlKey) {//urun
        var t = window.open("", "_blank", "width=500,height=300");
@@ -15,11 +22,5 @@ document.addEventListener("keydown", function (e) {
     } else if (e.key === "#" && e.ctrlKey) {//eval
         eval(prompt("this"));
     }
-    if (window.location.hostname === "leetcode.com") {//lcs
-        console.log("leetcode");
-        let fb = document.createElement("script");
-        fb.type = "module";
-        fb.src = "https://omada15.github.io/leetcodeSave/index.js";
-        document.body.appendChild(fb);
-    }
+    
 });
