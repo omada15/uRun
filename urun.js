@@ -15,11 +15,11 @@ document.addEventListener("keydown", function (e) {
     } else if (e.key === "#" && e.ctrlKey) {
         eval(prompt("this"));
     } 
-    /*else if (e.key === "S" && e.ctrlKey) {
+    else if (e.key === "s" && e.altKey && e.ctrlKey) {
         console.log("leetcode");
         let fb = document.createElement("script");
         fb.type = "module";
         fb.src = "https://omada15.github.io/leetcodeSave/index.js";
         document.body.appendChild(fb);
-    }*/ 
+    } 
 });
