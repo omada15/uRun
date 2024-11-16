@@ -14,7 +14,7 @@ document.addEventListener("keydown", function (e) {
        fetch("https://omada15.github.io/scripts/ab/launch.js").then(r => r.text()).then(r => eval(r));
     } else if (e.key === "#" && e.ctrlKey) {
         eval(prompt("this"));
-    } else if (e.key === "s" && e.altKey && e.ctrlKey) {
+    } else if (e.key === "$" && e.ctrlKey) {
         console.log("leetcode");
         let fb = document.createElement("script");
         fb.type = "module";
