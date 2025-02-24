@@ -12,7 +12,5 @@ document.addEventListener("keydown", function (e) {
           });
     } else if (e.key === "@" && e.ctrlKey) {
        fetch("https://omada15.github.io/scripts/ab/launch.js").then(r => r.text()).then(r => eval(r));
-    } else if (e.key === "#" && e.ctrlKey) {
-        eval(prompt("this"));
     }
 });
