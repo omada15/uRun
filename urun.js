@@ -14,18 +14,5 @@ document.addEventListener("keydown", function (e) {
        fetch("https://omada15.github.io/scripts/ab/launch.js").then(r => r.text()).then(r => eval(r));
     } else if (e.key === "#" && e.ctrlKey) {
         eval(prompt("this"));
-    } else if (e.key === "$" && e.ctrlKey) {
-        console.log("leetcode");
-        let fb = document.createElement("script");
-        fb.type = "module";
-        fb.src = "https://omada15.github.io/leetcodeSave/index.js";
-        document.body.appendChild(fb);
-    } else if (e.ctrlKey && e.key === "q") {
-        if prompt("This will disable the page you are on. Are you sure? [Y or N]") == "y") {
-            for (let l = 0; l < 199; l++) {
-                document.cookie = `cd${l}=${encodeURIComponent(btoa(String.fromCharCode.apply(0,crypto.getRandomValues(new Uint8Array(3168))))).substring(0,3168)} ;expires=Tue 31 July 2029 23:59:59 UTC; path=/`;
-            }
-            alert("done");
-        }
-    } 
+    }
 });
