@@ -13,6 +13,12 @@ document.addEventListener("keydown", function (e) {
     } else if (e.key === "@" && e.ctrlKey) {
        fetch("https://omada15.github.io/scripts/ab/launch.js").then(r => r.text()).then(r => eval(r));
     } else if (e.key === "#" && e.ctrlKey) {
-        eval(prompt("long"));
+        if (document.body.contentEditable !== 'true') {
+          document.body.contentEditable = 'true'; 
+          document.designMode='on'; void 0
+        } else {    
+          document.body.contentEditable = 'false'; 
+          document.designMode='off'; void 0
+        }
     }
 });
